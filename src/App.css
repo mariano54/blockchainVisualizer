@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#fff, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#8e44ad, #a09ae0); /* Standard syntax (must be last) */
+  color: white;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 3s linear;
+  height: 50px;
+}
+
+.App-header {
+  height: 50px;
+  padding: 20px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

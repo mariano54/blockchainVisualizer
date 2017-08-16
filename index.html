@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<div class="Blockchain"></div>
+	<script>
+        const blockData = [{
+		            hash: '123',
+			                prev: '0',
+					            reward: 50,
+						                transactions: [{
+									                hash: '456',
+											            }],
+								        }];
+
+        const svgContainer = d3.select('.Blockchain')
+	            .append('svg')
+		                .attr('width', 200)
+				            .attr('height', 200);
+
+					            const blocks = svgContainer
+						                .data(blockData)
+	            .enter()
+	            .append('rect');
+
+		            blocks
+			                .attr('x', (d, i) => i * 30)
+					            .attr('y', 10)
+						                .attr('height', 20)
+								            .attr('width', 20)
+									                .style('fill', 'purple');
+	</script>
+	</body>
+</html>
